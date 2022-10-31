@@ -25,11 +25,6 @@ class SiniflarViewSet(
     filterset_class = SiniflarFilter
     http_method_names = ["options", "get", "post", "put", "patch", "delete"]
 
-    permission_type_map = {
-        **AutoPermissionViewSetMixin.permission_type_map,
-        "list":"list",
-        "create":"add"
-    }
 
     def get_queryset(self):
         # handle anonymous user case to aid in schema generation

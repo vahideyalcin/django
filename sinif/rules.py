@@ -10,8 +10,4 @@ def can_add_sinif(user):
     return (
         user.is_active
         & rules.is_authenticated(user)
-        & (
-            rules.is_superuser(user)
-            | (is_employed_by_owner(user, user) & is_employed_by_manager(user))
-        )
     )
