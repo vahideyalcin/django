@@ -18,10 +18,10 @@ class Siniflar(models.Model):
 
 
 class Meta:
-        rules_permissions = {
-            "view": can_add_sinif,
-            "add": can_add_sinif,
-            "change": can_add_sinif,
-            "delete": can_add_sinif,
-            "list": can_add_sinif,
-        }
+    rules_permissions = {
+        "view": can_add_sinif,
+        "add": can_add_sinif,
+        "change": can_add_sinif,
+        "delete": can_add_sinif,
+        "list": can_add_sinif,
+    }

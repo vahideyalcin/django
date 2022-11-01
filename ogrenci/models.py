@@ -23,10 +23,10 @@ class Ogrenciler(models.Model):
     created_at = models.DateTimeField(auto_now=True)
 
 class Meta:
-        rules_permissions = {
-            "view": can_add_ogrenci,
-            "add": can_add_ogrenci,
-            "change": can_add_ogrenci,
-            "delete": can_add_ogrenci,
-            "list": can_add_ogrenci,
-        }
+    rules_permissions = {
+        "view": can_add_ogrenci,
+        "add": can_add_ogrenci,
+        "change": can_add_ogrenci,
+        "delete": can_add_ogrenci,
+        "list": can_add_ogrenci,
+    }
